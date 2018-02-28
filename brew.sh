@@ -130,5 +130,47 @@ brew install kubectl
 # brew install heroku-toolbelt
 # heroku update
 
+# Install Cask
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+# Core casks
+brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="~/Applications" iterm2
+
+# Development tool casks
+brew cask install --appdir="/Applications" visual-studio-code
+brew cask install --appdir="/Applications" virtualbox
+brew cask install --appdir="/Applications" vagrant
+brew cask install --appdir="/Applications" macdown
+brew cask install --appdir="/Applications" insomnia
+brew cask install --appdir="/Applications" gas-mask
+
+# Misc casks
+brew cask install --appdir="/Applications" google-chrome
+brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" skype
+brew cask install --appdir="/Applications" slack
+brew cask install --appdir="/Applications" discord
+brew cask install --appdir="/Applications" dropbox
+brew cask install --appdir="/Applications" evernote
+brew cask install --appdir="/Applications" 1password
+brew cask install --appdir="/Applications" etcher
+brew cask install --appdir="/Applications" istat-menu
+brew cask install --appdir="/Applications" karabiner
+brew cask install --appdir="/Applications" keybase
+brew cask install --appdir="/Applications" spectacle
+brew cask install --appdir="/Applications" viscosity
+brew cask install --appdir="/Applications" daisydisk
+
+#Remove comment to install LaTeX distribution MacTeX
+#brew cask install --appdir="/Applications" mactex
+
+# Install Docker, which requires virtualbox
+brew cask install docker-edge
+
+# Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+
 # Remove outdated versions from the cellar.
 brew cleanup
