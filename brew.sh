@@ -125,13 +125,21 @@ brew link libxslt --force
 # Development tools
 brew install kubectl
 
+# Setup golang
+brew install golang
+brew install dep
+brew install go-delve/delve/delve
+
+mkdir -p ~/{bin,pkg,src}
+go get -v github.com/uudashr/gopkgs/cmd/gopkgs
+go get -v sourcegraph.com/sqs/goreturns
 
 # Install Heroku
 # brew install heroku-toolbelt
 # heroku update
 
 # Install Cask
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 brew tap caskroom/versions
 
 # Core casks
@@ -163,14 +171,14 @@ brew cask install --appdir="/Applications" spectacle
 brew cask install --appdir="/Applications" viscosity
 brew cask install --appdir="/Applications" daisydisk
 
-#Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
+# Remove comment to install LaTeX distribution MacTeX
+# brew cask install --appdir="/Applications" mactex
 
 # Install Docker, which requires virtualbox
 brew cask install docker-edge
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
 
 # Remove outdated versions from the cellar.
 brew cleanup
