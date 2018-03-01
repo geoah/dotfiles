@@ -48,7 +48,7 @@ fi;
 brew install wget --with-iri
 
 # Install GnuPG to enable PGP-signing commits.
-brew install gnupg
+# brew install gnupg
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
@@ -133,6 +133,7 @@ brew install go-delve/delve/delve
 mkdir -p ~/{bin,pkg,src}
 go get -v github.com/uudashr/gopkgs/cmd/gopkgs
 go get -v sourcegraph.com/sqs/goreturns
+go get -v github.com/nsf/gocode
 
 # Install Heroku
 # brew install heroku-toolbelt
@@ -155,6 +156,7 @@ brew cask install --appdir="/Applications" insomnia
 brew cask install --appdir="/Applications" gas-mask
 
 # Misc casks
+brew cask install --appdir="/Applications" gpg-suite
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype

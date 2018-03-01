@@ -185,3 +185,11 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[credential]
+	helper = osxkeychain
+
+[user]
+	email = george@noodles.gr
+	name = George Antoniadis
+	signingkey = E6020367
